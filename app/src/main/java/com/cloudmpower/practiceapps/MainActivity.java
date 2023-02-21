@@ -13,9 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Intent check =new Intent(this, RootLiCheck.class);
-        startActivity(check);
+
 
 
         //Check Device Details

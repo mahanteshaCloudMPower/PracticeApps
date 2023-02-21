@@ -3,6 +3,8 @@ package com.cloudmpower.practiceapps;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
@@ -11,7 +13,14 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        setupActivityListener();
+
+//        Intent check =new Intent(this, RootLiCheck.class);
+//        check.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        startActivity(check);
+        RootLiCheck act=new RootLiCheck();
+        Context context =getBaseContext();
+        act.rootCheck(context);
+
     }
 
 
